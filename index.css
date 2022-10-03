@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root {
+    --color-white: hsl(31 77%, 52%);
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-Orange: hsl(34, 97%, 64%);
+    --color-Blue: hsl(212, 86%, 64%);
+    --color-Very-Dark-Blue: hsl(234, 12%, 34%);
+    --color-Grayish-Blue: hsl(229, 6%, 66%);
+    --color-Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+section {
+    background-color: var(--color-white)
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: var(--color-Very-Light-Gray);
+   font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+   display: block;
+   margin-left: auto;
+}
+
+.container {
+   margin: 3rem auto;
+}
+
+.soft-heading {
+    font-weight: 200;
+}
+
+h1 {
+    color: var(--color-Very-Dark-Blue);
+}
+
+.card {
+    padding: 2rem;
+    box-shadow: 0 12.5px 5.3px rgb(0 0 0 / 8%);
+    color: var(--color-Grayish-Blue);
+    max-width: 360px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 5px solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.card p {
+    margin-bottom: 2.5rem;
+    line-height: 1.8em;
+}
+
+.card1 {
+    border: none;
+    background: none;
+    box-shadow: none;
+    max-width:fit-content;
+    text-align: center;
+}
+
+.card h1 {
+    margin-bottom: 0.5rem;
+}
+
+.card2 {
+    border-color: var(--color-cyan);
+}
+
+.card3 {
+    border-color: var(--color-red);
+}
+
+.card4 {
+    border-color: var(--color-Orange);
+}
+
+.card5 {
+    border-color: var(--color-Blue);
+}
+
+@media (hover :hover) {
+
+    .card:hover {
+        transform: scale(1.1);
+        
+    }
+
+    .card1:hover {
+        transform: none;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    .container {
+        display: grid;
+        max-width: 2150px;
+        column-gap: 2rem;
+
+    }
+
+    .card {
+        max-height: 235px;
+        max-width: 360px;
+    }
+
+    .card1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .card2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .card3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .card4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .card5 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
